@@ -20,6 +20,11 @@ img {
 
 h1 {
     font-size: 4rem;
+    text-align: center;
+}
+
+.leer {
+    text-align: center;
 }
 
 .contenedor {
@@ -29,13 +34,24 @@ h1 {
 }
 
 .entrada-blog a {
-    display: inline-block;
+    display: inline-blck;
     background-color: #2196F3;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
+
 }
 
+
 /** CODIGO AQUI **/
+
+@media (min-width: 768px) {
+    .dos-columnas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+
+    }
+}
