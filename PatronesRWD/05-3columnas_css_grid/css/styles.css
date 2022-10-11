@@ -53,16 +53,17 @@ p {
 @media (min-width: 768px){
     .contenedor-grid{
         display: grid;
-        grid-template-columns: 25% 50% 25%;
+        grid-template-areas: "izq centro der";
+        grid-template-columns: 1fr 3fr 1fr;
         gap:2rem;
         grid-auto-flow: column;
     }
 
     .contenido-principal{
-        grid-column: 2/3;
+         grid-area: centro;
     }
 
     .side-1{
-        grid-column: 1/2;
+        grid-area: izq;
     }
 }
